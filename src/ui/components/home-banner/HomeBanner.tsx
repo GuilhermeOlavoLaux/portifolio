@@ -1,9 +1,10 @@
 import styles from './HomeBanner.module.css';
-import GitHubLogo from '@assets/github-logo.svg';
-import LinkedinLogo from '@assets/linkedin-logo.svg';
-import InstagramLogo from '@assets/instagram-logo.svg';
+import LinkedinLogo from '@assets/images/linkedin-logo.svg';
+import InstagramLogo from '@assets/images/instagram-logo.svg';
+import Technoloies from '@assets/images/technologies.png';
 
 import Typical from 'react-typical';
+import GitHubLogo from '@assets/images/github-logo.svg';
 
 export default function HomeBanner() {
   return (
@@ -25,11 +26,7 @@ export default function HomeBanner() {
           />
         </h1>
 
-        <img
-          className={styles.home_banner__image}
-          src="https://felipefialho.com/static/a9db98a764a23be1b45e7878919c90f9/2019-o-que-front-enders-precisam-saber-cover.png"
-          alt=""
-        />
+        <img className={styles.home_banner__image} src={Technoloies} alt="" />
 
         <div className={styles.home_banner__logos_container}>
           <img src={GitHubLogo} alt="" />

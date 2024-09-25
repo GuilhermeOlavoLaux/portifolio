@@ -1,12 +1,18 @@
-import styles from "./Technologies.module.css";
-import TechnologieCarousel from "@components/technologie-carrousel/TechnologieCarousel";
-import TechnologieCard from "@components/technologie-card/TechnologieCard";
-import FrontEnd from "@assets/front-end.png";
-import BackEnd from "@assets/back-end.png";
-import Others from "@assets/others.png";
+import styles from './Technologies.module.css';
+import TechnologieCarousel from '@components/technologie-carrousel/TechnologieCarousel';
+import TechnologieCard from '@components/technologie-card/TechnologieCard';
+import FrontEnd from '@assets/images/front-end.png';
+import BackEnd from '@assets/images/back-end.png';
+import Others from '@assets/images/others.png';
+import React from 'react';
+
+interface CardType {
+  key: number;
+  content: React.ReactNode;
+}
 
 export function Technologies() {
-  const cards = [
+  const cards: CardType[] = [
     {
       key: 0,
       content: (

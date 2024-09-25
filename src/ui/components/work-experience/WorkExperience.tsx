@@ -1,7 +1,7 @@
-import CocaCola from '@assets/coca-cola.svg';
-import Cwi from '@assets/cwi.png';
-import ComplianceTotal from '@assets/compliance-total.png';
-import PrivacyTools from '@assets/privacy-tools.png';
+import CocaCola from '@assets/images/coca-cola.svg';
+import Cwi from '@assets/images/cwi.png';
+import ComplianceTotal from '@assets/images/compliance-total.png';
+import PrivacyTools from '@assets/images/privacy-tools.png';
 
 import styles from './WorkExperience.module.css';
 

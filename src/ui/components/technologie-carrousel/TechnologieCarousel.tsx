@@ -1,28 +1,29 @@
 import Carousel from 'react-spring-3d-carousel';
-import { useState, useEffect, SetStateAction } from 'react';
+import React, { useState, useEffect } from 'react';
 import { config } from 'react-spring';
-
 import styles from './TechnologieCarousel.module.css';
 
+interface Card {
+  key: number;
+  content: React.ReactNode;
+  onClick?: () => void;
+}
+
 interface TechnologieCarouselTypes {
-  cards: any;
+  cards: Card[];
   offset: number;
   showArrows: boolean;
 }
 
 export default function TechnologieCarousel(props: TechnologieCarouselTypes) {
-  const table = props.cards.map(
-    (card: any, index: SetStateAction<undefined>) => {
-      return {
-        ...card,
-        onClick: () => setGoToSlide(index),
-      };
-    }
-  );
+  const table = props.cards.map((card, index) => ({
+    ...card,
+    onClick: () => setGoToSlide(index),
+  }));
 
   const [offsetRadius, setOffsetRadius] = useState(2);
   const [showArrows, setShowArrows] = useState(false);
-  const [goToSlide, setGoToSlide] = useState();
+  const [goToSlide, setGoToSlide] = useState<number | undefined>(undefined);
   const [cards] = useState(table);
 
   useEffect(() => {

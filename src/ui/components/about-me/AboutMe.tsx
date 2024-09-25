@@ -1,5 +1,5 @@
-import GuilhermeLaux from "@assets/guilheme-laux-photo.png";
-import styles from "./AboutMe.module.css";
+import GuilhermeLaux from '@assets/images/guilheme-laux-photo.png';
+import styles from './AboutMe.module.css';
 
 export function AboutMe() {
   return (

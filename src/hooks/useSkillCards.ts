@@ -1,6 +1,6 @@
-import ResponsiveDesignImage from '@assets/responsive-design.png';
-import ResponsiveDesignImage2 from '@assets/teste.png';
-import Lighthouse from '@assets/lighthouse.png';
+import ResponsiveDesignImage from '@assets/images/responsive-design.png';
+import ResponsiveDesignImage2 from '@assets/images/teste.png';
+import Lighthouse from '@assets/images/lighthouse.png';
 
 export interface SkillCardPropsTypes {
   id: number;
