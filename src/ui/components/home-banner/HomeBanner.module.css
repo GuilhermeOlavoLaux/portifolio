@@ -1,0 +1,90 @@
+.home_banner {
+  background-color: var(--sand-yellow);
+  min-height: 100vh;
+  font-size: 25px;
+  position: relative;
+}
+
+.home_banner__content {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.home_banner__title {
+  text-align: center;
+  padding: 0px 10px 30px 10px;
+  color: var(--dark-blue);
+}
+
+.home_banner__image {
+  height: 220px;
+}
+
+.home_banner__text {
+  width: 420px;
+}
+
+.home_banner__logos_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_banner__wave {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.home_banner__first_wave {
+  animation: moveWave1 3s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave1 {
+  from {
+    transform: translate(-1800px);
+  }
+}
+
+.home_banner__second_wave {
+  animation: moveWave2 3s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave2 {
+  from {
+    transform: translate(-1600px);
+  }
+}
+
+.home_banner__third_wave {
+  animation: moveWave3 3s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave3 {
+  from {
+    transform: translate(-1400px);
+  }
+}
+
+@media (max-width: 740px) {
+  .home_banner__image {
+    height: 184px;
+  }
+}
+
+@media (max-width: 425px) {
+  .home_banner__image {
+    height: 124px;
+  }
+}
+
+@media (max-height: 580px) {
+  .home_banner__title {
+    padding-top: 100px;
+  }
+}

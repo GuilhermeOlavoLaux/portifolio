@@ -1,0 +1,40 @@
+.header {
+  height: 80px;
+  position: fixed;
+  top: 0px;
+  background-color: var(--dark-blue);
+  width: 100vw;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__scrolled {
+  transition-duration: background-color 2s;
+  background-color: var(--blue);
+}
+
+.header__logo {
+  height: 100px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__link {
+  padding-right: 20px;
+  color: orange;
+}
+
+.header__link:last-child {
+  padding-right: 0px;
+}
+@media (max-width: 810px) {
+  .header__nav {
+    display: none;
+  }
+}

@@ -1,0 +1,26 @@
+.skill_card {
+  width: 340px;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  border-radius: 6px;
+  margin: 20px;
+}
+
+.skill_card_title {
+  padding: 20px 10px;
+  color: var(--black-blue);
+}
+
+.skill_card__image {
+  height: 150px;
+}
+
+@media (max-width: 390px) {
+  .skill_card {
+    width: 280px;
+  }
+  .skill_card__image {
+    height: 120px;
+  }
+}

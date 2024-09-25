@@ -1,0 +1,25 @@
+.footer {
+  background-color: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 180px;
+  padding: 0px 20px;
+}
+
+.footer__content img {
+  height: 80px;
+}
+
+@media (max-width: 520px) {
+  .projects__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0px 20px;
+  }
+  .footer__content img {
+    height: 30px;
+  }
+}

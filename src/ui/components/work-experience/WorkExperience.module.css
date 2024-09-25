@@ -1,0 +1,72 @@
+.work_experience {
+  width: 100%;
+  position: relative;
+}
+
+.work_experience__title {
+  color: orange;
+  text-align: center;
+  padding: 110px 20px 24px;
+  height: 50px;
+  z-index: 3;
+  position: relative;
+}
+
+.work_experience__logos__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 50px);
+  position: relative;
+  z-index: 2;
+  padding-bottom: 15%;
+}
+
+.work_experience__logo {
+  height: 100px;
+  z-index: 2;
+  margin: 20px;
+}
+
+.work_experience__privacy__logo {
+  height: 170px;
+  z-index: 2;
+  margin: 20px;
+}
+
+@media (max-width: 1350px) {
+  .work_experience__logos__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+  }
+  .work_experience__logo {
+    margin: 0px;
+  }
+
+  .work_experience__privacy__logo {
+    margin: 0px;
+  }
+}
+
+@media (max-width: 850px) {
+  .work_experience__logos__container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+  }
+  .work_experience__logo {
+    margin: 20px;
+    height: 75px;
+  }
+
+  .work_experience__privacy__logo {
+    margin: 0px;
+    height: 150px;
+  }
+}

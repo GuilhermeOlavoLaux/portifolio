@@ -1,0 +1,33 @@
+.skills {
+  min-height: calc(100vh - 80px);
+  background-color: bisque;
+  position: relative;
+}
+
+.skills__title {
+  padding-top: 67px;
+  text-align: center;
+  color: orange;
+  position: relative;
+}
+
+.skills__cards {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.skills__cards__wave {
+  position: absolute;
+  background-color: bisque;
+  bottom: 0px;
+}
+
+@media (max-width: 1300px) {
+  .skills__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
